@@ -9,11 +9,21 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
   },
+  "files": [
+    "lib",
+    "README.md",
+    "package.json"
+  ],
   "repository": {
     "type": "git",
     "url": "ssh://git@git.jetbrains.space/reversense/dxc/dxc-core-api.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.jetbrains.space/reversense/p/dxc/dxc-npm/",
+    "access": "private"
   },
   "type": "module",
   "author": "Reversense - georges@reversense.com",
@@ -27,7 +37,5 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
-  "dependencies": {
-    "@dexcalibur/dexcalibur-orm": "^1.0.5"
-  }
+  "dependencies": {}
 }
