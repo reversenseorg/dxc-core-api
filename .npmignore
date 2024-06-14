@@ -1,0 +1,5 @@
+./test/
+.nvmrc
+tsconfig.json
+.mocharc.json
+.npmrc
