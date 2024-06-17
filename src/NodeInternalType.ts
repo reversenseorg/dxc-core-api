@@ -70,7 +70,8 @@ export enum NodeInternalType {
     PRIMITIVE_TYPE,
     OBJECT_TYPE,
     BOM,
-    OPERATOR
+    OPERATOR,
+    REVERSENSE_PRODUCT
 }
 
 export const NodeInternalTypeName = {
@@ -141,7 +142,8 @@ export const NodeInternalTypeName = {
     [NodeInternalType.ASSURANCE_REPORT]: "ASSURANCE_REPORT",
     [NodeInternalType.PROJECT_INPUT]: "PROJECT_INPUT",
     [NodeInternalType.BOM]: "BOM",
-    [NodeInternalType.OPERATOR]: "OPERATOR"
+    [NodeInternalType.OPERATOR]: "OPERATOR",
+    [NodeInternalType.REVERSENSE_PRODUCT]: "REVERSENSE_PRODUCT",
 }
 
 
