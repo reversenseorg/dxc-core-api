@@ -71,7 +71,8 @@ export enum NodeInternalType {
     OBJECT_TYPE,
     BOM,
     OPERATOR,
-    REVERSENSE_PRODUCT
+    REVERSENSE_PRODUCT,
+    ANDROID_MANIFEST
 }
 
 export const NodeInternalTypeName = {
@@ -144,6 +145,7 @@ export const NodeInternalTypeName = {
     [NodeInternalType.BOM]: "BOM",
     [NodeInternalType.OPERATOR]: "OPERATOR",
     [NodeInternalType.REVERSENSE_PRODUCT]: "REVERSENSE_PRODUCT",
+    [NodeInternalType.ANDROID_MANIFEST]: "ANDROID_MANIFEST",
 }
 
 
