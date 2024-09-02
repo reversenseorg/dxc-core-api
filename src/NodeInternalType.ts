@@ -71,7 +71,12 @@ export enum NodeInternalType {
     OBJECT_TYPE,
     BOM,
     OPERATOR,
-    REVERSENSE_PRODUCT
+    REVERSENSE_PRODUCT,
+    UI_ROLE,
+    UI_CMP_TYPE,
+    UI_CMP,
+    UI_EVT_TYPE,
+    UI_EVT
 }
 
 export const NodeInternalTypeName = {
@@ -144,6 +149,11 @@ export const NodeInternalTypeName = {
     [NodeInternalType.BOM]: "BOM",
     [NodeInternalType.OPERATOR]: "OPERATOR",
     [NodeInternalType.REVERSENSE_PRODUCT]: "REVERSENSE_PRODUCT",
+    [NodeInternalType.UI_ROLE]: "UI_ROLE",
+    [NodeInternalType.UI_CMP_TYPE]: "UI_CMP_TYPE",
+    [NodeInternalType.UI_CMP]: "UI_CMP",
+    [NodeInternalType.UI_EVT_TYPE]: "UI_EVT_TYPE",
+    [NodeInternalType.UI_EVT]: "UI_EVT"
 }
 
 
