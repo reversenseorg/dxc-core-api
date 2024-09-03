@@ -77,7 +77,8 @@ export enum NodeInternalType {
     UI_CMP_TYPE,
     UI_CMP,
     UI_EVT_TYPE,
-    UI_EVT
+    UI_EVT,
+    RESOURCE
 }
 
 export const NodeInternalTypeName = {
@@ -155,7 +156,8 @@ export const NodeInternalTypeName = {
     [NodeInternalType.UI_CMP_TYPE]: "UI_CMP_TYPE",
     [NodeInternalType.UI_CMP]: "UI_CMP",
     [NodeInternalType.UI_EVT_TYPE]: "UI_EVT_TYPE",
-    [NodeInternalType.UI_EVT]: "UI_EVT"
+    [NodeInternalType.UI_EVT]: "UI_EVT",
+    [NodeInternalType.RESOURCE]: "RESOURCE"
 }
 
 
