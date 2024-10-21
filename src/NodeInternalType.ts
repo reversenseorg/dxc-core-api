@@ -82,7 +82,7 @@ export enum NodeInternalType {
     ORG_UNIT,
     APP_UNIT,
     USER_GROUP,
-    SECRET,
+    CREDENTIAL,
     CONNECTION
 }
 
@@ -166,7 +166,7 @@ export const NodeInternalTypeName = {
     [NodeInternalType.ORG_UNIT]: "ORG_UNIT",
     [NodeInternalType.APP_UNIT]: "APP_UNIT",
     [NodeInternalType.USER_GROUP]: "USER_GROUP",
-    [NodeInternalType.SECRET]: "SECRET",
+    [NodeInternalType.CREDENTIAL]: "CREDENTIAL",
     [NodeInternalType.CONNECTION]: "CONNECTION"
 }
 
