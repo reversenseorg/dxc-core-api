@@ -1,6 +1,6 @@
 {
   "name": "@dexcalibur/dxc-core-api",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Core API",
   "main": "./lib/entry.js",
   "exports": "./lib/entry.js",
