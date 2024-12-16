@@ -85,6 +85,7 @@ export enum NodeInternalType {
     CREDENTIAL,
     CONNECTION,
     ACL_ROLE,
+    SECRET,
     DEVICE_TPL
 }
 
@@ -170,8 +171,7 @@ export const NodeInternalTypeName = {
     [NodeInternalType.USER_GROUP]: "USER_GROUP",
     [NodeInternalType.CREDENTIAL]: "CREDENTIAL",
     [NodeInternalType.CONNECTION]: "CONNECTION",
-    [NodeInternalType.ACL_ROLE]: "ACL_ROLE",
-    [NodeInternalType.DEVICE_TPL]: "DEVICE_TPL"
+    [NodeInternalType.ACL_ROLE]: "ACL_ROLE"
 }
 
 
