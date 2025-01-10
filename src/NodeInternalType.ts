@@ -87,7 +87,8 @@ export enum NodeInternalType {
     ACL_ROLE,
     SECRET,
     DEVICE_TPL,
-    DEVICE_INST
+    DEVICE_INST,
+    PROJECT_ORDER
 }
 
 export const NodeInternalTypeName = {
@@ -175,7 +176,8 @@ export const NodeInternalTypeName = {
     [NodeInternalType.ACL_ROLE]: "ACL_ROLE",
     [NodeInternalType.SECRET]: "SECRET",
     [NodeInternalType.DEVICE_TPL]: "DEVICE_TPL",
-    [NodeInternalType.DEVICE_INST]: "DEVICE_INST"
+    [NodeInternalType.DEVICE_INST]: "DEVICE_INST",
+    [NodeInternalType.PROJECT_ORDER]: "PROJECT_ORDER"
 }
 
 
