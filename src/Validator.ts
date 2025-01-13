@@ -78,7 +78,7 @@ export class ValidationRule {
             let ctr=0;
             for (let i = 0; i < vValue.length; i++) {
                 vRules.map(r => {
-                    if(r.test(vValue)){
+                    if(r.test(vValue[i])){
                         ctr++;
                     }
                 });
@@ -193,7 +193,7 @@ export class ValidationRule {
         return new ValidationRule( ValidationType.CUSTOM, (vValue:any)=>{
 
             function isObj(v):boolean{
-                return (v==null) || (typeof v != 'object');
+                return (v!=null) && (typeof v == 'object');
             }
 
             function validate(s:Record<any, any>, d:StructureValidatorTree){
