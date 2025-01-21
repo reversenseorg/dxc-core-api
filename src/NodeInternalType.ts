@@ -90,7 +90,8 @@ export enum NodeInternalType {
     DEVICE_INST,
     PROJECT_ORDER,
     INTERNAL_STATE,
-    UPLOAD
+    UPLOAD,
+    ENGINE_NODE
 }
 
 export const NodeInternalTypeName = {
@@ -181,7 +182,8 @@ export const NodeInternalTypeName = {
     [NodeInternalType.DEVICE_INST]: "DEVICE_INST",
     [NodeInternalType.PROJECT_ORDER]: "PROJECT_ORDER",
     [NodeInternalType.INTERNAL_STATE]: "INTERNAL_STATE",
-    [NodeInternalType.UPLOAD]: "UPLOAD"
+    [NodeInternalType.UPLOAD]: "UPLOAD",
+    [NodeInternalType.ENGINE_NODE]: "ENGINE_NODE"
 }
 
 
