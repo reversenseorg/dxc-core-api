@@ -97,7 +97,8 @@ export enum NodeInternalType {
     UI_STATE,
     UI_TRANSITION,
     PARAMETER,
-    RETURN
+    RETURN,
+    POLICY
 }
 
 export const NodeInternalTypeName = {
@@ -193,7 +194,8 @@ export const NodeInternalTypeName = {
     [NodeInternalType.WORKFLOW]: "WORKFLOW",
     [NodeInternalType.INDICATOR]: "INDICATOR",
     [NodeInternalType.PARAMETER]: "PARAMETER",
-    [NodeInternalType.RETURN]: "RETURN"
+    [NodeInternalType.RETURN]: "RETURN",
+    [NodeInternalType.POLICY]: "POLICY"
 }
 
 
