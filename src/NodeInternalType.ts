@@ -98,7 +98,8 @@ export enum NodeInternalType {
     UI_TRANSITION,
     PARAMETER,
     RETURN,
-    POLICY
+    POLICY,
+    ASSURANCE_SCANNER
 }
 
 export const NodeInternalTypeName = {
