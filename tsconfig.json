@@ -14,9 +14,7 @@
     ],
     "esModuleInterop": true,
     "types": [
-      "node",
-      "chai",
-      "mocha"
+      "node"
 	]
   },
   "include": [
