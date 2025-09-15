@@ -11,5 +11,6 @@ export enum OperatingSystem {
     WINNT= 'windows NET',
     WEB_OS='webos',
     FIRE_OS='fireos',
-    NONE=''
+    NONE='',
+    ANY='*'
 }
