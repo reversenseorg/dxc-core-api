@@ -101,7 +101,10 @@ export enum NodeInternalType {
     POLICY,
     ASSURANCE_SCANNER,
     PERM,
-    CTRL_ASMT
+    CTRL_ASMT,
+    CPE,
+    CVE,
+    CWE
 }
 
 export const NodeInternalTypeName = {
@@ -200,7 +203,10 @@ export const NodeInternalTypeName = {
     [NodeInternalType.RETURN]: "RETURN",
     [NodeInternalType.POLICY]: "POLICY",
     [NodeInternalType.PERM]: "PERM",
-    [NodeInternalType.CTRL_ASMT]: "CTRL_ASMT"
+    [NodeInternalType.CTRL_ASMT]: "CTRL_ASMT",
+    [NodeInternalType.CPE]: "CPE",
+    [NodeInternalType.CVE]: "CVE",
+    [NodeInternalType.CWE]: "CWE"
 }
 
 
