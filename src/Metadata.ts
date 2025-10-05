@@ -49,7 +49,11 @@ export enum MetadataTopic {
     VERSION_LINK="verslnk",
     PROJECT_LINK='prjlnk',
     CHANGELOG='chloglnk',
-    EXPLOIT_LNK='expltlnk'
+    EXPLOIT_LINK='expltlnk',
+    POC_LINK='poclnk',
+    ISSUE_TRACK_LINK='isstrklnk',
+    PATCH_LINK='patchlnk',
+    VENDOR_ADV_LINK='vadvlnk',
 }
 
 
