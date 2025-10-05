@@ -48,7 +48,8 @@ export enum MetadataTopic {
     PRODUCT_LINK="productlnk",
     VERSION_LINK="verslnk",
     PROJECT_LINK='prjlnk',
-    CHANGELOG='chloglnk'
+    CHANGELOG='chloglnk',
+    EXPLOIT_LNK='expltlnk'
 }
 
 
