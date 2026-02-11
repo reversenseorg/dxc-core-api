@@ -106,7 +106,8 @@ export enum NodeInternalType {
     CVE,
     CWE,
     USR_PREF,
-    RUNTIME_SESS
+    RUNTIME_SESS,
+    FUZZ_SESS
 }
 
 export const NodeInternalTypeName = {
@@ -210,7 +211,9 @@ export const NodeInternalTypeName = {
     [NodeInternalType.CVE]: "CVE",
     [NodeInternalType.CWE]: "CWE",
     [NodeInternalType.USR_PREF]: "USR_PREF",
-    [NodeInternalType.RUNTIME_SESS]: "RUNTIME_SESS"
+    [NodeInternalType.RUNTIME_SESS]: "RUNTIME_SESS",
+    [NodeInternalType.FUZZ_SESS]: "FUZZ_SESS",
+
 }
 
 
