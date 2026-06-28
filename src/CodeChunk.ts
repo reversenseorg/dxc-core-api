@@ -1,4 +1,3 @@
-
 /*
  *     Reversense platform / dxc-core-api :  Reversense is an automated reverse engineering and analysis platform
  *     focused on security, privacy, quality, accessibility and safety assessment of software, including mobile app and firmware.
@@ -19,16 +18,33 @@
  *
  */
 
-export enum Architecture {
-    ARMEABI='armeabi',
-    THUMB2='Thumb-2',
-    VFPV3='VFPv3-D16',
-    AARCH64='AArch64',
-    AARCH32='AArch32',
-    X86='x86',
-    X86_64='x86_64',
-    MIPS='mips',
-    MIPS_64='mips64',
-    PPC32='powerpc',
-    PPC64='powerpc64'
+import {NodeInternalType} from "./NodeInternalType.js";
+import {Metadata} from "./Metadata.js";
+
+
+export interface INodeRef {
+    __:NodeInternalType;
+    _uid?:any;
+    tags?:number[];
+    //getUID():string;
+}
+
+export interface CodeExtract<T> {
+    ref: INodeRef,
+    parent?: T,
+    data: T
+}
+
+export interface CodeChunk<T> {
+    oid: string,
+    aid: string,
+    /**
+     * Extended Package ULR (epurl)
+     * It is package url extended to any source of binary including app stores and tools such as xDR
+     * @field
+     */
+    epurl: string,
+    metadata?: Metadata[],
+    tags?: string[],
+    data: CodeExtract<T>[]
 }

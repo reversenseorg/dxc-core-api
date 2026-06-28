@@ -26,7 +26,7 @@
   },
   "type": "module",
   "author": "Reversense - georges@reversense.com",
-  "license": "ISC",
+  "license": "AGPL-3.0-only",
   "devDependencies": {
     "@types/node": "^20.17.12",
     "ts-node": "^10.9.1",
