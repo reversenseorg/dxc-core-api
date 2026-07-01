@@ -3,3 +3,6 @@
 tsconfig.json
 .mocharc.json
 .npmrc
+./scripts/
+.mocharc.json
+.projid

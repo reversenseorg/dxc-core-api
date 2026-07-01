@@ -62,6 +62,7 @@ export class CoreDebug {
                 });
 
 
+                // @ts-ignore
                 console.error("[CORE DEBUG][checkJsonSerialize] "+s+"\n",e.stack);
             }
         }
