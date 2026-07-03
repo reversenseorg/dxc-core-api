@@ -26,6 +26,11 @@ npm publish   # use @dexcalibur/<pkg> by default
 
 # Switch scope to ublish npm package within @reversenseorg scope
 cp package.json package.json.bak
+
 npm pkg set name="@reversenseorg/dxc-core-api"
 npm publish --registry=https://npm.pkg.github.com/
+
+npm pkg set name="@reversense/dxc-core-api"
+npm publish --registry=https://registry.npmjs.org/
+
 mv package.json.bak package.json

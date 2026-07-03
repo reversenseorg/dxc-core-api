@@ -1,6 +1,6 @@
 {
   "name": "@dexcalibur/dxc-core-api",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "Core API",
   "main": "./lib/entry.js",
   "exports": "./lib/entry.js",
@@ -20,6 +20,11 @@
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:reversenseorg/dxc-core-api.git"
+  },
+  "publishConfig": {
+    "@dexcalibur:registry": "https://gitlab.reversense.org/api/v4/projects/46/packages/npm/",
+    "@reversense:registry": "https://registry.npmjs.org/",
+    "@reversenseorg:registry": "https://npm.pkg.github.com/"
   },
   "type": "module",
   "author": "Reversense - georges@reversense.com",
