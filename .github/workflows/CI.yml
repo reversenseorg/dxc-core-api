@@ -1,0 +1,38 @@
+# Equivalent to GitHub Actions de Dexcalibur_BuildDxcPro_Web (TeamCity Kotlin DSL)
+name: Build
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  id-token: write  # Required for OIDC
+  contents: write   # Required to upload assets
+
+jobs:
+  build:
+    name: Build dxc-core-api
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false  # never use caching in release builds
+      - name: Install global deps
+        run: npm install -g webpack webpack-cli
+      - name: Install dependencies
+        run: npm install
+      - name: Dump npm debug log
+        if: failure()
+        run: |
+          grep -iE 'http fetch .*(401|GET)' /github/home/.npm/_logs/*-debug-0.log | tail -40
+          npm config ls -l | grep -iE 'registry|authToken|_auth|always-auth'
+      - name: Build code
+        run: |
+          npm run build
+          npm run pack-generic
+          npm run pack-x64
+          npm run pack-arm64
