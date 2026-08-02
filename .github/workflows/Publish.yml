@@ -48,11 +48,7 @@ jobs:
           grep -iE 'http fetch .*(401|GET)' /github/home/.npm/_logs/*-debug-0.log | tail -40
           npm config ls -l | grep -iE 'registry|authToken|_auth|always-auth'
       - name: Build code
-        run: |
-          npm run build
-          npm run pack-generic
-          npm run pack-x64
-          npm run pack-arm64
+        run:  npm run build
       - name: Pack both names
         run: |
           set -euo pipefail

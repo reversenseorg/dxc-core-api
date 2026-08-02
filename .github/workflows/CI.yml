@@ -21,8 +21,6 @@ jobs:
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
           package-manager-cache: false  # never use caching in release builds
-      - name: Install global deps
-        run: npm install -g webpack webpack-cli
       - name: Install dependencies
         run: npm install
       - name: Dump npm debug log
@@ -33,6 +31,3 @@ jobs:
       - name: Build code
         run: |
           npm run build
-          npm run pack-generic
-          npm run pack-x64
-          npm run pack-arm64
